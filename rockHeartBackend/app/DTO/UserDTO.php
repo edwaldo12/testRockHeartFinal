@@ -1,0 +1,18 @@
+<?php
+
+namespace App\DTO;
+
+class UserDTO
+{
+  public ?string $name;
+  public ?string $email;
+  public ?string $password;
+  public $wallet = 0;
+
+  public function __construct(?string $name, ?string $email, ?string $password)
+  {
+    $this->name = $name;
+    $this->email = $email;
+    $this->password = $password;
+  }
+}
